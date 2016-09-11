@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="grey"> #ebebeb</color>
+    <color name="black"> #000000</color>
+    <color name="darkgrey"> #999999</color>
+    <color name="white"> #FFFFFF</color>
+    <color name="red"> #FF0000</color>
+    <color name="blue">#4c90f9</color>
+    <color name="gary">#898989</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="watermark_hint">#ccffffff</color>
+    <color name="act_background">#efefef</color>
+
+    <color name="item_bar_01">#1a2634</color>
+    <color name="item_bar_02">#23a189</color>
+    <color name="item_bar_03">#ff8e1d</color>
+    <color name="item_bar_04">#36abd0</color>
+    
+    <color name="calc_relative">#edf2f7</color>
+    <color name="calc_relative_pressed">#dce6ef</color>
+
+    <color name="calc_button">#ffffff</color>
+    <color name="calc_button_pressed">#edf2f7</color>
+
+    <color name="calc_button_equal">#2d3e50</color>
+    <color name="calc_button_equal_pressed">#233142</color>
+
+    <color name="theme_color">#2d3e50</color>
+    <color name="separated_gray">#CBCBCB</color>
+    <color name="background_gray">#F8F8F8</color>
+    <color name="deep_gray">#666666</color>
+
+</resources>

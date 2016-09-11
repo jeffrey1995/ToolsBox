@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.red.assistant.activity.PlumbActivity">
+
+    <com.red.assistant.view.ZoomView
+        android:id="@+id/zoom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:id="@+id/camera_iv_"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_btn_camera2" />
+
+    <ImageView
+        android:id="@+id/pointer_img"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/toolbox_icon_plumb" />
+    <ImageView
+        android:id="@+id/plumb_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/toolbox_bg_plumb2"/>
+
+</RelativeLayout>

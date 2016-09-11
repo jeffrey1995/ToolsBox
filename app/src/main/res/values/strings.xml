@@ -1,0 +1,18 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <!--<string name="app_name">Assistant</string>-->
+
+    <string name="tool_kit">工具箱</string>
+    <string name="phone_manager">手机管家</string>
+    <string name="living_helper">生活助手</string>
+    <string name="about"><u>关于</u></string>
+
+    <string name="format_battery_remain"><xliff:g id="battery_remain">%d</xliff:g>%%</string>
+    <string name="format_phone_cpu_max">最大频率: <xliff:g id="phone_cpu_max">%d</xliff:g>GHz</string>
+    <string name="format_phone_cpu_min">最小频率: <xliff:g id="phone_cpu_min">%d</xliff:g>GHz</string>
+    <string name="format_phone_ram_max">最大内存: <xliff:g id="phone_ram_max">%5.1f</xliff:g>GB</string>
+    <string name="format_phone_ram_used">已用: <xliff:g id="phone_ram_used">%d</xliff:g>GB</string>
+
+    <string name="screen_detect_hint">检查时将依次展示红－蓝－黑－白－黄－绿</string>
+    <string name="format_battery_time_left">还能使用<xliff:g id="hour">%d</xliff:g>小时<xliff:g id="minute">%d</xliff:g>分钟</string>
+    <string name="format_detail_time_left"><xliff:g id="hour">%d</xliff:g>小时<xliff:g id="minute">%d</xliff:g>分钟</string>
+</resources>

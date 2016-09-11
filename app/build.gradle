@@ -1,0 +1,148 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    signingConfigs {
+        debug {
+            storeFile file("moonlighting.jks")
+            storePassword "ch3cooh"
+            keyAlias "moonlighting"
+            keyPassword "ch3cooh"
+        }
+        release {
+            storeFile file("moonlighting.jks")
+            storePassword "ch3cooh"
+            keyAlias "moonlighting"
+            keyPassword "ch3cooh"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.red.assistant"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+        }
+
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    productFlavors {
+        //多渠道打包
+        red_assistant_360 {
+            manifestPlaceholders = [TD_CHANNEL_ID: "360redassistant", UMENG_CHANNEL_ID: "360redassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_baidu {
+            manifestPlaceholders = [TD_CHANNEL_ID: "baiduredassistant", UMENG_CHANNEL_ID: "baiduredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_anzhi {
+            manifestPlaceholders = [TD_CHANNEL_ID: "anzhiredassistant", UMENG_CHANNEL_ID: "anzhiredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_sougou {
+            manifestPlaceholders = [TD_CHANNEL_ID: "sougouredassistant", UMENG_CHANNEL_ID: "sougouredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包助手"
+        }
+        red_assistant_wandoujia {
+            manifestPlaceholders = [TD_CHANNEL_ID: "wandoujiaredassistant", UMENG_CHANNEL_ID: "wandoujiaredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_tencent {
+            manifestPlaceholders = [TD_CHANNEL_ID: "tencentredassistant", UMENG_CHANNEL_ID: "tencentredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_pptaobao {
+            manifestPlaceholders = [TD_CHANNEL_ID: "pptaobaoredassistant", UMENG_CHANNEL_ID: "pptaobaoredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_huawei {
+            manifestPlaceholders = [TD_CHANNEL_ID: "huaweiredassistant", UMENG_CHANNEL_ID: "huaweiredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_vivo {
+            manifestPlaceholders = [TD_CHANNEL_ID: "vivoredassistant", UMENG_CHANNEL_ID: "vivoredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包助手"
+        }
+        red_assistant_oppo {
+            manifestPlaceholders = [TD_CHANNEL_ID: "opporedassistant", UMENG_CHANNEL_ID: "opporedassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "抢红包神器"
+        }
+        red_assistant_meizu {
+            manifestPlaceholders = [TD_CHANNEL_ID: "meizuredassistant", UMENG_CHANNEL_ID: "meizuredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 101
+            versionName "1.0.1"
+            resValue "string", "app_name", "红包神器"
+        }
+        red_assistant_xiaomi {
+            manifestPlaceholders = [TD_CHANNEL_ID: "xiaomiredassistant", UMENG_CHANNEL_ID: "xiaomiredassistant", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.toolbox.red_assistant", icon: "@mipmap/icon"]
+            applicationId "com.red.assistant"
+            versionCode 100
+            versionName "1.0.0"
+            resValue "string", "app_name", "红包助手"
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.loopj.android:android-async-http:1.4.7'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile files('libs/AMap_Location_V2.4.1_20160414.jar')
+    compile files('libs/AMap_Search_V3.3.0_20160616.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile files('libs/TalkingDataAnalytics_V1.2.74.jar')
+}

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="#f0f0f0"
+        android:layout_width="56dp"
+        android:layout_height="70dp"
+        android:padding="12dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_phone_info"
+        android:src="@drawable/icon_phone_cpu"/>
+    <TextView
+        android:background="#f0f0f0"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:id="@+id/tv_phone_info"
+        android:paddingTop="30dp"
+        android:paddingLeft="0dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp"
+        android:text="型号"
+        android:layout_toRightOf="@+id/iv_phone_info"
+        android:textColor="#808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_phone_info_detail"
+        android:layout_toRightOf="@id/tv_phone_info"
+        android:layout_marginLeft="28dp"
+        android:layout_centerVertical="true"
+        android:text="Android"
+        />
+
+</RelativeLayout>

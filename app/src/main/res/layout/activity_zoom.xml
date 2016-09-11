@@ -1,0 +1,45 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_mirror_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_color">
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="35dp"
+                android:background="@drawable/navigationbar_btn_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="放大镜"
+            android:textSize="23sp"/>
+    </RelativeLayout>
+
+    <com.red.assistant.view.ZoomView
+        android:layout_below="@id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zoom_view"/>
+    <SeekBar
+        android:id="@+id/sb_zoom"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_protractor_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.red.assistant.view.ZoomView
+        android:id="@+id/zoom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_iv"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|top"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_btn_camera2"/>
+    <ImageView
+        android:id="@+id/protractor_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/toolbox_bg_protractor2"/>
+
+</FrameLayout>
